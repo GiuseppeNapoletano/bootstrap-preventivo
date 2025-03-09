@@ -21,25 +21,101 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servizi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contatti</a>
-                        </li>
-                    </ul>
+                    <div class="col-12 d-flex justify-content-end">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servizi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contatti</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <h2 class="fw-bold mt-3">Richiesta preventivo</h2>
-
-    </main>
+    <div class="container-md">
+        <main>
+            <div class="row col-12 d-flex">
+                <div class="col-12 col-md-8">
+                    <h3 class="fw-bold mt-3">Richiesta preventivo</h2>
+                        <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
+                        <form action="" class="row g-2">
+                            <div class="col-12">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome">
+                            </div>
+                            <div class="col-12 row g-2">
+                                <label for="lastname" class="form-label">Cognome</label>
+                                <input type="text" class="form-control" id="lastname"
+                                    placeholder="Inserisci il tuo cognome">
+                            </div>
+                            <div class="col-12 row g-2">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="mail" class="form-control" id="email"
+                                    placeholder="Inserisci la tua e-mail">
+                            </div>
+                            <div class="col-12 row g-2">
+                                <label for="tipolavoro">Tipo di lavoro</label>
+                                <select class="form-select" id="tipolavoro">
+                                    <option value="" disabled selected>Seleziona il tipo di lavoro</option>
+                                    <option value="backend">Backend Development</option>
+                                    <option value="frontend">Frontend Development</option>
+                                    <option value="analysis">Project Analysis</option>
+                                </select>
+                            </div>
+                            <div class="col-12 row g-2">
+                                <label for="dettaglilavoro">Dettagli del lavoro</label>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Scrivi qui il tuo commento...</label>
+                                </div>
+                            </div>
+                            <div class="col-12 row g-2">
+                                <label for="codicepromo">Codice Promozionale (opzionale)</label>
+                                <input type="text" class="form-control" id="codicepromo"
+                                    placeholder="Inserisci il tuo codice promozionale" minlength="7" maxlength="7">
+                            </div>
+                            <div class="col-12 row g-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Accetto la Privacy Policy
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Accetta per poter continuare.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 row g-2">
+                                <button class="btn btn-primary" type="submit">Calcola preventivo</button>
+                            </div>
+                        </form>
+                </div>
+                <div class="col-12 justify-content-center col-md-4 mt-4 ">
+                    <div class="card">
+                        <img src="https://www.res-ipsa.com/wp-content/uploads/2014/11/300x200.gif" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">I nostri contatti</h5>
+                            <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">help@boolfactory.test</li>
+                            <li class="list-group-item">+1122334455</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="help">Help desk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
 
 
