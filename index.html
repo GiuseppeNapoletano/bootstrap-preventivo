@@ -44,14 +44,14 @@
                 <div class="col-12 col-md-8">
                     <h3 class="fw-bold mt-3">Richiesta preventivo</h2>
                         <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
-                        <form action="" class="row g-2">
+                        <form action="" class="row g-2" id="preventivoform">
                             <div class="col-12">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome">
+                                <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome">
                             </div>
                             <div class="col-12 row g-2">
                                 <label for="lastname" class="form-label">Cognome</label>
-                                <input type="text" class="form-control" id="lastname"
+                                <input type="text" class="form-control" id="cognome"
                                     placeholder="Inserisci il tuo cognome">
                             </div>
                             <div class="col-12 row g-2">
@@ -72,7 +72,7 @@
                                 <label for="dettaglilavoro">Dettagli del lavoro</label>
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a comment here"
-                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                        id="floatingTextarea2" style="height: 100px" id="commento"></textarea>
                                     <label for="floatingTextarea2">Scrivi qui il tuo commento...</label>
                                 </div>
                             </div>
@@ -92,11 +92,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 row g-2">
-                                <button class="btn btn-primary" type="submit">Calcola preventivo</button>
-                            </div>
-                            <div class="col-12 col-md-6 row g-2">
-                                <p class="fw bold" id="risultato"></p>
+                            <div class="row col-12 d-flex justify-content-between">
+                                <div class="col-12 col-md-6 row g-2 d-flex">
+                                    <button class="btn btn-primary" type="submit">Calcola preventivo</button>
+                                </div>
+                                <div class="col-12 col-md-6 row g-2 d-flex">
+                                    <p class="fw-bold " id="risultato"></p>
+                                </div>
                             </div>
                         </form>
                 </div>
