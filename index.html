@@ -47,21 +47,21 @@
                         <form action="" class="row g-2" id="preventivoform">
                             <div class="col-12">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome">
+                                <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome" required>
                             </div>
                             <div class="col-12 row g-2">
                                 <label for="lastname" class="form-label">Cognome</label>
                                 <input type="text" class="form-control" id="cognome"
-                                    placeholder="Inserisci il tuo cognome">
+                                    placeholder="Inserisci il tuo cognome" required>
                             </div>
                             <div class="col-12 row g-2">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="mail" class="form-control" id="email"
-                                    placeholder="Inserisci la tua e-mail">
+                                    placeholder="Inserisci la tua e-mail" required>
                             </div>
                             <div class="col-12 row g-2">
                                 <label for="tipolavoro">Tipo di lavoro</label>
-                                <select class="form-select" id="tipolavoro">
+                                <select class="form-select" id="tipolavoro" required>
                                     <option value="" disabled selected>Seleziona il tipo di lavoro</option>
                                     <option value="backend">Backend Development</option>
                                     <option value="frontend">Frontend Development</option>
@@ -93,11 +93,11 @@
                                 </div>
                             </div>
                             <div class="row col-12 d-flex justify-content-between">
-                                <div class="col-12 col-md-6 row g-2 d-flex">
+                                <div class="d-flex col-12 col-md-6 row g-2 mt-4">
                                     <button class="btn btn-primary" type="submit">Calcola preventivo</button>
                                 </div>
-                                <div class="col-12 col-md-6 row g-2 d-flex">
-                                    <p class="fw-bold " id="risultato"></p>
+                                <div class="d-flex col-12 col-md-6 row g-2 mt-4">
+                                    <h4 class="fw-bold text-center" id="risultato"></h4>
                                 </div>
                             </div>
                         </form>
