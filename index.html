@@ -47,11 +47,11 @@
                         <form action="" class="row g-2" id="preventivoform">
                             <div class="col-12">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome" required>
+                                <input type="text" class="form-control" pattern="[a-zA-Z]*" id="nome" placeholder="Inserisci il tuo nome" required>
                             </div>
                             <div class="col-12 row g-2">
                                 <label for="lastname" class="form-label">Cognome</label>
-                                <input type="text" class="form-control" id="cognome"
+                                <input type="text" class="form-control" pattern="[a-zA-Z]*" id="cognome"
                                     placeholder="Inserisci il tuo cognome" required>
                             </div>
                             <div class="col-12 row g-2">
@@ -80,6 +80,9 @@
                                 <label for="codicepromo">Codice Promozionale (opzionale)</label>
                                 <input type="text" class="form-control" id="codicepromo"
                                     placeholder="Inserisci il tuo codice promozionale" minlength="7" maxlength="7">
+                            </div>
+                            <div class="col-12">
+                                <p class="fw-bold text-danger" id="promofailed"></p>
                             </div>
                             <div class="col-12 row g-2">
                                 <div class="form-check">
